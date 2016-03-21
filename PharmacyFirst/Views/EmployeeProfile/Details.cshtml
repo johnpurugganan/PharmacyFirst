@@ -1,0 +1,90 @@
+﻿@model PharmacyFirst.Models.EmployeeProfile
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>EmployeeProfile</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MiddleInitial)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MiddleInitial)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Active)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Active)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UpdateDateTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UpdateDateTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UpdatedBy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UpdatedBy)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Departmentid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Departmentid)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Positionid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Positionid)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.contactid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.contactid)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
